@@ -45,7 +45,7 @@ show_menu
 while [ -n "$opt" ]; do
     case $opt in
     1)
-        clear
+        source ./tools/test.sh
         show_menu
         ;;
     x)
