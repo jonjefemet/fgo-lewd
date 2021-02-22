@@ -6,6 +6,7 @@ GREEN=$(tput setaf 2)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
 begin=$(date +"%s")
+chmod -R 777 ./
 
 #Se genera la estructura del menu
 show_menu() {
@@ -25,7 +26,7 @@ show_menu() {
     |_____||_____|_____||  |__||__|__|_____||__|__||__|
                        |___|                           "
     printf "${CYAN}*********************************************${normal}\n"
-    printf "${CYAN}**${number} 1)${CYAN} nhentai ${normal}\n"
+    printf "${CYAN}**${number} 1)${CYAN} tmoManga ${normal}\n"
     printf "${CYAN}*********************************************${normal}\n"
     printf "Please enter a menu option and enter or ${fgred}x to exit. ${normal}"
     read opt
