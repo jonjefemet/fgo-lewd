@@ -1,6 +1,6 @@
 # FGO-LEWD
 
->**Es un sistema en scraping para la descarga de manga y doujinshis.**
+>**Es un sistema de scraping para la descarga de manga y doujinshis.**
 
 <div align="center">
   
