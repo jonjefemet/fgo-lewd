@@ -10,7 +10,7 @@
 
 
 ### En proceso doujinshis
-- [X] nhentai
+- [] nhentai
 
 ### En proceso manga
-- [X] lectortmo
+- [] lectortmo
