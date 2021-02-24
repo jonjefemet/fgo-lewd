@@ -1,1231 +1,1417 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
-<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
-<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
-<meta name="exoclick-site-verification" content="043e4ac6d429fc45736a2571151745ed">
-<meta name="trafficjunky-site-verification" content="vnrwaw9t0" />
-<meta name="csrf-token" content="UbpX4aoKDJiMFeomvTlzppDWw6By4pekCDEkiamS">
-<title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+    <meta name="exoclick-site-verification" content="043e4ac6d429fc45736a2571151745ed">
+    <meta name="trafficjunky-site-verification" content="vnrwaw9t0" />
+    <meta name="csrf-token" content="UbpX4aoKDJiMFeomvTlzppDWw6By4pekCDEkiamS">
+    <title>
         Biblioteca -
-            TuMangaOnline
-    
-</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2957ba">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#2957ba">
-<meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#2957ba">
-<meta name="author" content="TuMangaOnline">
-<meta name="subject" content="Manga Online">
+        TuMangaOnline
 
-<meta name="description" content="Tu lector de manga online">
-<meta name="keywords" content="Manga,Manhua,Leer Manga, Online">
-<meta name=”robots” content=”Index,Follow”>
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@TuMangaOnline">
-<meta name="twitter:creator" content="@TuMangaOnline">
-<meta name="twitter:title" content="    Biblioteca -
-            TuMangaOnline
-    
-">
-<meta name="twitter:description" content="Tu lector de manga online">
-<meta name="twitter:image" content="https://lectortmo.com/logo.png">
-<meta name="twitter:image:alt" content="    Biblioteca -
-            TuMangaOnline
-    
-">
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lectortmo.com/library?_page=1&amp;title=senko">
-<meta property="og:title" content="    Biblioteca -
-            TuMangaOnline
-    
-">
-<meta property="og:description" content="Tu lector de manga online">
-<meta property="og:image" content="https://lectortmo.com/logo.png">
-<meta property="og:image:width" content="300">
-<meta property="og:image:height" content="450">
-<meta property="fb:app_id" content="173650823343275" />
-<meta property="og:locale" content="es_ES">
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2957ba">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2957ba">
+    <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2957ba">
+    <meta name="author" content="TuMangaOnline">
+    <meta name="subject" content="Manga Online">
 
-<link href="/css/app.css?id=fcfbee8dc89ec522e321?v=1.0.31" rel="stylesheet">
-<!--[if IE 9]>
+    <meta name="description" content="Tu lector de manga online">
+    <meta name="keywords" content="Manga,Manhua,Leer Manga, Online">
+    <meta name=”robots” content=”Index,Follow”>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@TuMangaOnline">
+    <meta name="twitter:creator" content="@TuMangaOnline">
+    <meta name="twitter:title" content="    Biblioteca -
+            TuMangaOnline
+    
+">
+    <meta name="twitter:description" content="Tu lector de manga online">
+    <meta name="twitter:image" content="https://lectortmo.com/logo.png">
+    <meta name="twitter:image:alt" content="    Biblioteca -
+            TuMangaOnline
+    
+">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lectortmo.com/library?_page=1&amp;title=senko">
+    <meta property="og:title" content="    Biblioteca -
+            TuMangaOnline
+    
+">
+    <meta property="og:description" content="Tu lector de manga online">
+    <meta property="og:image" content="https://lectortmo.com/logo.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="450">
+    <meta property="fb:app_id" content="173650823343275" />
+    <meta property="og:locale" content="es_ES">
+
+    <link href="/css/app.css?id=fcfbee8dc89ec522e321?v=1.0.31" rel="stylesheet">
+    <!--[if IE 9]>
 <link href="/css/bootstrap-ie9.min.css" rel="stylesheet">
 <![endif]-->
-<!--[if lte IE 8]>
+    <!--[if lte IE 8]>
 <link href="/css/bootstrap-ie8.min.css" rel="stylesheet">
 <script type="text/javascript" src="/js/html5shiv@3.7.3"></script>
 <![endif]-->
 
-<script type="text/javascript" async=true>
-    (function() {
-        var host = 'lectortmo.com';
-        var element = document.createElement('script');
-        var firstScript = document.getElementsByTagName('script')[0];
-        var url = 'https://quantcast.mgr.consensu.org'
-            .concat('/choice/', 'p5pLPFWZhaDH8', '/', host, '/choice.js')
-        var uspTries = 0;
-        var uspTriesLimit = 3;
-        element.async = true;
-        element.type = 'text/javascript';
-        element.src = url;
+    <script type="text/javascript" async=true>
+        (function () {
+            var host = 'lectortmo.com';
+            var element = document.createElement('script');
+            var firstScript = document.getElementsByTagName('script')[0];
+            var url = 'https://quantcast.mgr.consensu.org'
+                .concat('/choice/', 'p5pLPFWZhaDH8', '/', host, '/choice.js')
+            var uspTries = 0;
+            var uspTriesLimit = 3;
+            element.async = true;
+            element.type = 'text/javascript';
+            element.src = url;
 
-        firstScript.parentNode.insertBefore(element, firstScript);
+            firstScript.parentNode.insertBefore(element, firstScript);
 
-        function makeStub() {
-            var TCF_LOCATOR_NAME = '__tcfapiLocator';
-            var queue = [];
-            var win = window;
-            var cmpFrame;
+            function makeStub() {
+                var TCF_LOCATOR_NAME = '__tcfapiLocator';
+                var queue = [];
+                var win = window;
+                var cmpFrame;
 
-            function addFrame() {
-                var doc = win.document;
-                var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+                function addFrame() {
+                    var doc = win.document;
+                    var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
 
-                if (!otherCMP) {
-                    if (doc.body) {
-                        var iframe = doc.createElement('iframe');
+                    if (!otherCMP) {
+                        if (doc.body) {
+                            var iframe = doc.createElement('iframe');
 
-                        iframe.style.cssText = 'display:none';
-                        iframe.name = TCF_LOCATOR_NAME;
-                        doc.body.appendChild(iframe);
-                    } else {
-                        setTimeout(addFrame, 5);
-                    }
-                }
-                return !otherCMP;
-            }
-
-            function tcfAPIHandler() {
-                var gdprApplies;
-                var args = arguments;
-
-                if (!args.length) {
-                    return queue;
-                } else if (args[0] === 'setGdprApplies') {
-                    if (
-                        args.length > 3 &&
-                        args[2] === 2 &&
-                        typeof args[3] === 'boolean'
-                    ) {
-                        gdprApplies = args[3];
-                        if (typeof args[2] === 'function') {
-                            args[2]('set', true);
+                            iframe.style.cssText = 'display:none';
+                            iframe.name = TCF_LOCATOR_NAME;
+                            doc.body.appendChild(iframe);
+                        } else {
+                            setTimeout(addFrame, 5);
                         }
                     }
-                } else if (args[0] === 'ping') {
-                    var retr = {
-                        gdprApplies: gdprApplies,
-                        cmpLoaded: false,
-                        cmpStatus: 'stub'
-                    };
-
-                    if (typeof args[2] === 'function') {
-                        args[2](retr);
-                    }
-                } else {
-                    queue.push(args);
+                    return !otherCMP;
                 }
-            }
 
-            function postMessageEventHandler(event) {
-                var msgIsString = typeof event.data === 'string';
-                var json = {};
+                function tcfAPIHandler() {
+                    var gdprApplies;
+                    var args = arguments;
 
-                try {
-                    if (msgIsString) {
-                        json = JSON.parse(event.data);
+                    if (!args.length) {
+                        return queue;
+                    } else if (args[0] === 'setGdprApplies') {
+                        if (
+                            args.length > 3 &&
+                            args[2] === 2 &&
+                            typeof args[3] === 'boolean'
+                        ) {
+                            gdprApplies = args[3];
+                            if (typeof args[2] === 'function') {
+                                args[2]('set', true);
+                            }
+                        }
+                    } else if (args[0] === 'ping') {
+                        var retr = {
+                            gdprApplies: gdprApplies,
+                            cmpLoaded: false,
+                            cmpStatus: 'stub'
+                        };
+
+                        if (typeof args[2] === 'function') {
+                            args[2](retr);
+                        }
                     } else {
-                        json = event.data;
+                        queue.push(args);
                     }
-                } catch (ignore) {}
-
-                var payload = json.__tcfapiCall;
-
-                if (payload) {
-                    window.__tcfapi(
-                        payload.command,
-                        payload.version,
-                        function(retValue, success) {
-                            var returnMsg = {
-                                __tcfapiReturn: {
-                                    returnValue: retValue,
-                                    success: success,
-                                    callId: payload.callId
-                                }
-                            };
-                            if (msgIsString) {
-                                returnMsg = JSON.stringify(returnMsg);
-                            }
-                            if (event && event.source && event.source.postMessage) {
-                                event.source.postMessage(returnMsg, '*');
-                            }
-                        },
-                        payload.parameter
-                    );
                 }
-            }
 
-            while (win) {
-                try {
-                    if (win.frames[TCF_LOCATOR_NAME]) {
-                        cmpFrame = win;
+                function postMessageEventHandler(event) {
+                    var msgIsString = typeof event.data === 'string';
+                    var json = {};
+
+                    try {
+                        if (msgIsString) {
+                            json = JSON.parse(event.data);
+                        } else {
+                            json = event.data;
+                        }
+                    } catch (ignore) { }
+
+                    var payload = json.__tcfapiCall;
+
+                    if (payload) {
+                        window.__tcfapi(
+                            payload.command,
+                            payload.version,
+                            function (retValue, success) {
+                                var returnMsg = {
+                                    __tcfapiReturn: {
+                                        returnValue: retValue,
+                                        success: success,
+                                        callId: payload.callId
+                                    }
+                                };
+                                if (msgIsString) {
+                                    returnMsg = JSON.stringify(returnMsg);
+                                }
+                                if (event && event.source && event.source.postMessage) {
+                                    event.source.postMessage(returnMsg, '*');
+                                }
+                            },
+                            payload.parameter
+                        );
+                    }
+                }
+
+                while (win) {
+                    try {
+                        if (win.frames[TCF_LOCATOR_NAME]) {
+                            cmpFrame = win;
+                            break;
+                        }
+                    } catch (ignore) { }
+
+                    if (win === window.top) {
                         break;
                     }
-                } catch (ignore) {}
-
-                if (win === window.top) {
-                    break;
+                    win = win.parent;
                 }
-                win = win.parent;
+                if (!cmpFrame) {
+                    addFrame();
+                    win.__tcfapi = tcfAPIHandler;
+                    win.addEventListener('message', postMessageEventHandler, false);
+                }
+            };
+
+            makeStub();
+
+            var uspStubFunction = function () {
+                var arg = arguments;
+                if (typeof window.__uspapi !== uspStubFunction) {
+                    setTimeout(function () {
+                        if (typeof window.__uspapi !== 'undefined') {
+                            window.__uspapi.apply(window.__uspapi, arg);
+                        }
+                    }, 500);
+                }
+            };
+
+            var checkIfUspIsReady = function () {
+                uspTries++;
+                if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                    console.warn('USP is not accessible');
+                } else {
+                    clearInterval(uspInterval);
+                }
+            };
+
+            if (typeof window.__uspapi === 'undefined') {
+                window.__uspapi = uspStubFunction;
+                var uspInterval = setInterval(checkIfUspIsReady, 6000);
             }
-            if (!cmpFrame) {
-                addFrame();
-                win.__tcfapi = tcfAPIHandler;
-                win.addEventListener('message', postMessageEventHandler, false);
-            }
-        };
-
-        makeStub();
-
-        var uspStubFunction = function() {
-            var arg = arguments;
-            if (typeof window.__uspapi !== uspStubFunction) {
-                setTimeout(function() {
-                    if (typeof window.__uspapi !== 'undefined') {
-                        window.__uspapi.apply(window.__uspapi, arg);
-                    }
-                }, 500);
-            }
-        };
-
-        var checkIfUspIsReady = function() {
-            uspTries++;
-            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
-                console.warn('USP is not accessible');
-            } else {
-                clearInterval(uspInterval);
-            }
-        };
-
-        if (typeof window.__uspapi === 'undefined') {
-            window.__uspapi = uspStubFunction;
-            var uspInterval = setInterval(checkIfUspIsReady, 6000);
-        }
-    })();
-</script>
-
-
-<script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-160667616-1',{'sampleRate': 1});
-    ga('send', 'pageview');
+        })();
     </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-<script async src="//adserver.nakamasweb.com/www/delivery/asyncjs.php"></script>
-<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-160667616-1', { 'sampleRate': 1 });
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <script async src="//adserver.nakamasweb.com/www/delivery/asyncjs.php"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>
+
 <body>
-<div id="app" class="pb-5">
-<header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container">
-<a class="navbar-brand animated fadeIn" href="https://lectortmo.com">
-TU<b>MANGA</b><i>ONLINE</i>
-</a>
-<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-<ul class="navbar-nav mr-auto">
-<li class="nav-item">
-<a class="nav-link active" href="https://lectortmo.com/library">Biblioteca</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="https://lectortmo.com/groups">Grupos</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="https://lectortmo.com/lists">Listas</a>
-</li>
-<li class="nav-item" style="position: relative;">
-<a class="nav-link" href="https://lectortmo.com/forum" target="_blank" style="position: relative;">Foro</a>
-</li>
-</ul>
-<form method="GET" action="https://lectortmo.com/library" accept-charset="UTF-8" class="form-inline my-2 my-md-0 px-0 px-md-3">
-<input name="_page" type="hidden" value="1">
-<input name="title" type="text" class="form-control" placeholder="Buscar...">
-</form>
-<ul class="navbar-nav">
-<li class="nav-item">
-<a class="nav-link btn btn-primary" href="https://lectortmo.com/uploads"><i class="text-light fas fa-upload"></i></a>
-</li>
-<li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownTemplate" data-toggle="dropdown" role="button" aria-expanded="false" title="Modo nocturno">
-<i class="fas fa-eye fa-fw"></i><span id="toggleLightDarkIcon"><i class="fas fa-toggle-off fa-fw"></i></span>
-<span class="caret"></span>
-</a>
-<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownTemplate">
-<a class="dropdown-item" href="#" id="toggleLightDarkBtn" data-theme="light">Modo nocturno</a>
-</div>
-</li>
-<li class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguage" data-toggle="dropdown" role="button" aria-expanded="false" title="Cambiar idioma">
-<span class="flag-icon flag-icon-es"></span>
-<span class="caret"></span>
-</a>
-<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLanguage">
-<a class="dropdown-item" href="https://lectortmo.com/lang/es"><span class="flag-icon flag-icon-es"></span>&nbsp;Español</a>
- <a class="dropdown-item" href="https://lectortmo.com/lang/en"><span class="flag-icon flag-icon-gb"></span>&nbsp;English</a>
-<a class="dropdown-item" href="https://lectortmo.com/lang/ct"><span class="flag-icon flag-icon-ct"></span>&nbsp;Catalá</a>
-<a class="dropdown-item" href="https://lectortmo.com/lang/pt"><span class="flag-icon flag-icon-pt"></span>&nbsp;Português</a>
-</div>
-</li>
-<li class="nav-item"><a href="https://lectortmo.com/login" class="nav-link">Acceder</a></li>
-<li class="nav-item"><a href="https://lectortmo.com/register" class="nav-link">Registrar</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</header> <main role="main" class="container-fluid">
-<div class="row">
-<div class="col m-auto">
-<div class="pbl pbl_top text-center col-12 col-md-8 offset-md-2">
-<ins data-revive-zoneid="24" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="form-row">
-<div class="col-12 col-md-9 mt-2">
-<input id="title_item" class="form-control order-select form-control-lg" placeholder="Buscar..." name="title" type="text" value="senko">
-</div>
-<div class="col-8 col-md-2 mt-2">
-<select id="order_field_select" class="order-select form-control form-control-lg extendSelect" data-btn-class="btn-primary btn-block btn-lg">
-<option value="title" selected>Título</option>
-<option value="author">Autor</option>
-<option value="company">Compañia</option>
-</select>
-</div>
-<div class="col-4 col-md-1 mt-2">
-<button id="search_submit" class="btn btn-success btn-lg btn-block"><i class="fas fa-search fa-fw"></i></button>
-</div>
-</div>
-</div>
-<div class="col-12 col-lg-4 col-xl-3">
-<form method="GET" action="https://lectortmo.com/library" accept-charset="UTF-8" id="form-filters">
-<input id="order_item" name="order_item" type="hidden" value="likes_count">
-<input id="order_dir" name="order_dir" type="hidden" value="desc">
-<input id="title" name="title" type="hidden" value="senko">
-<input name="_page" type="hidden" value="1">
-<input id="filter_by" name="filter_by" type="hidden" value="title">
-<div class="pbl pbl_lateral_top text-center">
-<ins data-revive-zoneid="22" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
-</div>
-<div class="card mt-2">
-<div class="card-header" id="heading-books-filters">
-<h3 class="mb-0" data-toggle="collapse" data-target="#books-filters" aria-expanded="false" aria-controls="books-filters">
-<i class="indicator fas fa-chevron-right pull-right"></i>
-<button class="btn btn-link" type="button">Filtros</button>
-</h3>
-</div>
-<div id="books-filters" class="collapse" aria-labelledby="heading-books-filters">
- <div class="card-body">
-<div class="form-row">
-<div class="col">
-<label for="type" class="form-label">Tipo</label>
-</div>
-<div class="col">
-<select name="type" id="type" class="form-control extendSelect" onchange="checkStatus()" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="manga">Manga</option>
-<option value="manhua">Manhua</option>
-<option value="manhwa">Manhwa</option>
-<option value="novel">Novela</option>
-<option value="one_shot">One shot</option>
-<option value="doujinshi">Doujinshi</option>
-<option value="oel">Oel</option>
-</select>
-</div>
-<div class="col-12">
-<small>* Necesario para filtrar por estado</small>
-</div>
-</div>
-<hr>
-<div class="form-row">
-<div class="col">
-<label for="demography" class="form-label">Demograf&iacute;a</label>
-</div>
-<div class="col">
-<select name="demography" id="demography" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="seinen">Seinen</option>
-<option value="shoujo">Shoujo</option>
-<option value="shounen">Shounen</option>
-<option value="josei">Josei</option>
-<option value="kodomo">Kodomo</option>
-</select>
-</div>
-</div>
-<hr>
-<div class="form-row" id="status_filter" style="display: none;">
-<div class="col">
-<label for="status" class="form-label">Estado</label>
-</div>
-<div class="col">
-<select name="status" id="status" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="publishing">Publicándose</option>
-<option value="ended">Finalizado</option>
- <option value="cancelled">Cancelado</option>
-<option value="on_hold">Pausado</option>
-</select>
-</div>
-</div>
-<hr id="status_filter_line" style="display: none;">
-<div class="form-row" id="translation_status_filter" style="display: none;">
-<div class="col">
-<label for="status" class="form-label">Traducciones</label>
-</div>
-<div class="col">
-<select name="translation_status" id="translation_status" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="active">Activo</option>
-<option value="finished">Finalizado</option>
-<option value="abandoned">Abandonado</option>
-</select>
-</div>
-</div>
-<hr id="translation_status_filter_line" style="display: none;">
-<div class="form-row">
-<div class="col">
-<label for="webcomic" class="form-label">Webcomic</label>
-</div>
-<div class="col">
-<select name="webcomic" id="webcomic" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="true">Si</option>
-<option value="false">No</option>
-</select>
-</div>
-</div>
-<hr>
-<div class="form-row">
-<div class="col">
-<label for="yonkoma" class="form-label">Yonkoma</label>
-</div>
-<div class="col">
-<select name="yonkoma" id="yonkoma" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="true">Si</option>
-<option value="false">No</option>
-</select>
-</div>
-</div>
-<hr>
-<div class="form-row">
-<div class="col">
-<label for="amateur" class="form-label">Amateur</label>
-</div>
-<div class="col">
-<select name="amateur" id="amateur" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="true">Si</option>
-<option value="false">No</option>
-</select>
-</div>
-</div>
-<hr>
-<div class="form-row">
-<div class="col">
-<label for="erotic" class="form-label">Er&oacute;tico</label>
-</div>
-<div class="col">
-<select name="erotic" id="erotic" class="form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="">Ver todo</option>
-<option value="true">Si</option>
-<option value="false">No</option>
-</select>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card mt-2">
-<div class="card-header" id="heading-books-genders">
-<h3 class="mb-0" data-toggle="collapse" data-target="#books-genders" aria-expanded="false" aria-controls="books-genders">
-<i class="indicator fas fa-chevron-right pull-right"></i>
-<button class="btn btn-link collapsed" type="button">Géneros</button>
-</h3>
-</div>
-<div id="books-genders" class="collapse" aria-labelledby="heading-books-genders">
-<div class="card-body">
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_1" value="1">
-<label class="custom-control-label" for="gender_1">Acción</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_2" value="2">
-<label class="custom-control-label" for="gender_2">Aventura</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_3" value="3">
- <label class="custom-control-label" for="gender_3">Comedia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_4" value="4">
-<label class="custom-control-label" for="gender_4">Drama</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_5" value="5">
-<label class="custom-control-label" for="gender_5">Recuentos de la vida</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_6" value="6">
-<label class="custom-control-label" for="gender_6">Ecchi</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_7" value="7">
-<label class="custom-control-label" for="gender_7">Fantasia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_8" value="8">
-<label class="custom-control-label" for="gender_8">Magia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_9" value="9">
-<label class="custom-control-label" for="gender_9">Sobrenatural</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_10" value="10">
-<label class="custom-control-label" for="gender_10">Horror</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_11" value="11">
-<label class="custom-control-label" for="gender_11">Misterio</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_12" value="12">
-<label class="custom-control-label" for="gender_12">Psicológico</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_13" value="13">
-<label class="custom-control-label" for="gender_13">Romance</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_14" value="14">
-<label class="custom-control-label" for="gender_14">Ciencia Ficción</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_15" value="15">
-<label class="custom-control-label" for="gender_15">Thriller</label>
-</div>
-</div>
- <div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_16" value="16">
-<label class="custom-control-label" for="gender_16">Deporte</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_17" value="17">
-<label class="custom-control-label" for="gender_17">Girls Love</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_18" value="18">
-<label class="custom-control-label" for="gender_18">Boys Love</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_19" value="19">
-<label class="custom-control-label" for="gender_19">Harem</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_20" value="20">
-<label class="custom-control-label" for="gender_20">Mecha</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_21" value="21">
-<label class="custom-control-label" for="gender_21">Supervivencia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_22" value="22">
-<label class="custom-control-label" for="gender_22">Reencarnación</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_23" value="23">
-<label class="custom-control-label" for="gender_23">Gore</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_24" value="24">
-<label class="custom-control-label" for="gender_24">Apocalíptico</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_25" value="25">
-<label class="custom-control-label" for="gender_25">Tragedia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_26" value="26">
-<label class="custom-control-label" for="gender_26">Vida Escolar</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_27" value="27">
-<label class="custom-control-label" for="gender_27">Historia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_28" value="28">
-<label class="custom-control-label" for="gender_28">Militar</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_29" value="29">
-<label class="custom-control-label" for="gender_29">Policiaco</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_30" value="30">
-<label class="custom-control-label" for="gender_30">Crimen</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_31" value="31">
-<label class="custom-control-label" for="gender_31">Superpoderes</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_32" value="32">
-<label class="custom-control-label" for="gender_32">Vampiros</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_33" value="33">
-<label class="custom-control-label" for="gender_33">Artes Marciales</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_34" value="34">
-<label class="custom-control-label" for="gender_34">Samurái</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_35" value="35">
-<label class="custom-control-label" for="gender_35">Género Bender</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_36" value="36">
-<label class="custom-control-label" for="gender_36">Realidad Virtual</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_37" value="37">
-<label class="custom-control-label" for="gender_37">Ciberpunk</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_38" value="38">
-<label class="custom-control-label" for="gender_38">Musica</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_39" value="39">
-<label class="custom-control-label" for="gender_39">Parodia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_40" value="40">
-<label class="custom-control-label" for="gender_40">Animación</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_41" value="41">
-<label class="custom-control-label" for="gender_41">Demonios</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_42" value="42">
-<label class="custom-control-label" for="gender_42">Familia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_43" value="43">
-<label class="custom-control-label" for="gender_43">Extranjero</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_44" value="44">
-<label class="custom-control-label" for="gender_44">Niños</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_45" value="45">
-<label class="custom-control-label" for="gender_45">Realidad</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_46" value="46">
-<label class="custom-control-label" for="gender_46">Telenovela</label>
- </div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_47" value="47">
-<label class="custom-control-label" for="gender_47">Guerra</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="genders[]" id="gender_48" value="48">
-<label class="custom-control-label" for="gender_48">Oeste</label>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="card mt-2">
-<div class="card-header" id="heading-books-exclude-genders">
-<h3 class="mb-0" data-toggle="collapse" data-target="#books-exclude-genders" aria-expanded="false" aria-controls="books-exclude-genders">
-<i class="indicator fas fa-chevron-right pull-right"></i>
-<button class="btn btn-link collapsed" type="button">Excluir Géneros</button>
-</h3>
-</div>
-<div id="books-exclude-genders" class="collapse" aria-labelledby="heading-books-exclude-genders">
-<div class="card-body">
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_1" value="1">
-<label class="custom-control-label" for="exclude_gender_1">Acción</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_2" value="2">
-<label class="custom-control-label" for="exclude_gender_2">Aventura</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_3" value="3">
- <label class="custom-control-label" for="exclude_gender_3">Comedia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_4" value="4">
-<label class="custom-control-label" for="exclude_gender_4">Drama</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_5" value="5">
-<label class="custom-control-label" for="exclude_gender_5">Recuentos de la vida</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_6" value="6">
-<label class="custom-control-label" for="exclude_gender_6">Ecchi</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_7" value="7">
-<label class="custom-control-label" for="exclude_gender_7">Fantasia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_8" value="8">
-<label class="custom-control-label" for="exclude_gender_8">Magia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_9" value="9">
- <label class="custom-control-label" for="exclude_gender_9">Sobrenatural</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_10" value="10">
-<label class="custom-control-label" for="exclude_gender_10">Horror</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_11" value="11">
-<label class="custom-control-label" for="exclude_gender_11">Misterio</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_12" value="12">
-<label class="custom-control-label" for="exclude_gender_12">Psicológico</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_13" value="13">
-<label class="custom-control-label" for="exclude_gender_13">Romance</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_14" value="14">
-<label class="custom-control-label" for="exclude_gender_14">Ciencia Ficción</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_15" value="15">
- <label class="custom-control-label" for="exclude_gender_15">Thriller</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_16" value="16">
-<label class="custom-control-label" for="exclude_gender_16">Deporte</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_17" value="17">
-<label class="custom-control-label" for="exclude_gender_17">Girls Love</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_18" value="18">
-<label class="custom-control-label" for="exclude_gender_18">Boys Love</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_19" value="19">
-<label class="custom-control-label" for="exclude_gender_19">Harem</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_20" value="20">
-<label class="custom-control-label" for="exclude_gender_20">Mecha</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_21" value="21">
-<label class="custom-control-label" for="exclude_gender_21">Supervivencia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_22" value="22">
-<label class="custom-control-label" for="exclude_gender_22">Reencarnación</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_23" value="23">
-<label class="custom-control-label" for="exclude_gender_23">Gore</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_24" value="24">
-<label class="custom-control-label" for="exclude_gender_24">Apocalíptico</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_25" value="25">
-<label class="custom-control-label" for="exclude_gender_25">Tragedia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_26" value="26">
-<label class="custom-control-label" for="exclude_gender_26">Vida Escolar</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_27" value="27">
-<label class="custom-control-label" for="exclude_gender_27">Historia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_28" value="28">
-<label class="custom-control-label" for="exclude_gender_28">Militar</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_29" value="29">
-<label class="custom-control-label" for="exclude_gender_29">Policiaco</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_30" value="30">
-<label class="custom-control-label" for="exclude_gender_30">Crimen</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_31" value="31">
-<label class="custom-control-label" for="exclude_gender_31">Superpoderes</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_32" value="32">
-<label class="custom-control-label" for="exclude_gender_32">Vampiros</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_33" value="33">
-<label class="custom-control-label" for="exclude_gender_33">Artes Marciales</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_34" value="34">
-<label class="custom-control-label" for="exclude_gender_34">Samurái</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_35" value="35">
-<label class="custom-control-label" for="exclude_gender_35">Género Bender</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_36" value="36">
-<label class="custom-control-label" for="exclude_gender_36">Realidad Virtual</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_37" value="37">
-<label class="custom-control-label" for="exclude_gender_37">Ciberpunk</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_38" value="38">
-<label class="custom-control-label" for="exclude_gender_38">Musica</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_39" value="39">
-<label class="custom-control-label" for="exclude_gender_39">Parodia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_40" value="40">
-<label class="custom-control-label" for="exclude_gender_40">Animación</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_41" value="41">
-<label class="custom-control-label" for="exclude_gender_41">Demonios</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_42" value="42">
-<label class="custom-control-label" for="exclude_gender_42">Familia</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_43" value="43">
-<label class="custom-control-label" for="exclude_gender_43">Extranjero</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_44" value="44">
-<label class="custom-control-label" for="exclude_gender_44">Niños</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_45" value="45">
-<label class="custom-control-label" for="exclude_gender_45">Realidad</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_46" value="46">
-<label class="custom-control-label" for="exclude_gender_46">Telenovela</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_47" value="47">
-<label class="custom-control-label" for="exclude_gender_47">Guerra</label>
-</div>
-</div>
-<div class="col-auto my-1">
-<div class="custom-control custom-checkbox mr-sm-2">
-<input type="checkbox" class="custom-control-input gender-checkbox" name="exclude_genders[]" id="exclude_gender_48" value="48">
-<label class="custom-control-label" for="exclude_gender_48">Oeste</label>
-</div>
-</div>
-</div>
-</div>
-</div>
-<button class="btn btn-primary btn-block btn-lg mt-2" type="submit"><i class="fas fa-filter fa-fw"></i> Aplicar filtros</button>
-</form>
-<div class="pbl pbl_lateral_bottom text-center">
-<ins data-revive-zoneid="21" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
-</div>
-</div>
-<div class="col-12 col-lg-8 col-xl-9">
-<div class="form-row mt-2">
-<div class="col-12 col-md-9 text-right"><span class="form-label">Ordenar por:</span></div>
-<div class="col-8 col-md-2">
-<select id="order_item_select" class="order-select form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="likes_count" selected>Me gusta</option>
-<option value="alphabetically">Alfabético</option>
-<option value="score">Puntuación</option>
-<option value="creation">Creación</option>
-<option value="release_date">Fecha estreno</option>
-<option value="num_chapters">Núm. Capítulos</option>
- </select>
-</div>
-<div class="col-4 col-md-1">
-<select id="order_dir_select" class="order-select form-control extendSelect" data-btn-class="btn-default btn-block">
-<option value="asc">ASC</option>
-<option value="desc" selected>DESC</option>
-</select>
-</div>
-</div>
-<div class="row">
-<div class="col-12">
-<div class="pbl pbl_middle text-center">
-</div>
-</div>
-</div>
-<div class="row">
-<div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="12327">
-<a href=" https://lectortmo.com/library/manga/12327/henjo-hen-na-joshi-kousei-amaguri-chiko"> <div class="thumbnail book book-thumbnail-12327">
-<style>
-                .book-thumbnail-12327::before{
-                    background-image: url('https://otakuteca.com/images/books/cover/12327_TMOmanga094125.jpg');
-                }
-            </style>
-<div class="thumbnail-title">
-<h4 class="text-truncate" title="Henjo: Hen na Joshikousei Amaguri Chiko">Henjo: Hen na Joshikousei Amaguri Chiko</h4>
-</div>
-<span class="score"><i class="fas fa-star fa-fw"></i><span>8.00</span></span>
-<span class="book-type badge badge-manga">MANGA</span>
-<span class="demography seinen" title="Seinen: dirigido a hombres jóvenes y adultos">Seinen</span>
-</div>
-</a> </div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="33118">
-<a href=" https://lectortmo.com/library/manga/33118/sewayaki-kitsune-no-senko-san"> <div class="thumbnail book book-thumbnail-33118">
-<style>
-                .book-thumbnail-33118::before{
-                    background-image: url('https://otakuteca.com/images/books/cover/33118_TMOManga5a19ce3a4b0b4.jpg');
-                }
-            </style>
-<div class="thumbnail-title">
-<h4 class="text-truncate" title="Sewayaki Kitsune no Senko-san">Sewayaki Kitsune no Senko-san</h4>
-</div>
-<span class="score"><i class="fas fa-star fa-fw"></i><span>8.00</span></span>
-<span class="book-type badge badge-manga">MANGA</span>
-<span class="demography seinen" title="Seinen: dirigido a hombres jóvenes y adultos">Seinen</span>
-</div>
-</a> </div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="21336">
-<a href=" https://lectortmo.com/library/manga/21336/Yoake-e-No-Senkou"> <div class="thumbnail book book-thumbnail-21336">
-<style>
-                .book-thumbnail-21336::before{
-                    background-image: url('https://otakuteca.com/images/books/cover/21336_TMOManga583cced6aa8bd.jpg');
-                }
-            </style>
-<div class="thumbnail-title">
-<h4 class="text-truncate" title="Yoake e No Senkou">Yoake e No Senkou</h4>
-</div>
-<span class="score"><i class="fas fa-star fa-fw"></i><span>8.42</span></span>
-<span class="book-type badge badge-manga">MANGA</span>
-<span class="demography shoujo" title="Shoujo: dirigido a chicas adolescentes">Shoujo</span>
- </div>
-</a> </div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="23017">
-<a href=" https://lectortmo.com/library/manga/23017/Senkou-Paradox"> <div class="thumbnail book book-thumbnail-23017">
-<style>
-                .book-thumbnail-23017::before{
-                    background-image: url('https://otakuteca.com/images/books/cover/23017_TMOManga5897b63318953.jpg');
-                }
-            </style>
-<div class="thumbnail-title">
-<h4 class="text-truncate" title="Senkou Paradox">Senkou Paradox</h4>
-</div>
-<span class="score"><i class="fas fa-star fa-fw"></i><span>8.58</span></span>
-<span class="book-type badge badge-manga">MANGA</span>
-<span class="demography shoujo" title="Shoujo: dirigido a chicas adolescentes">Shoujo</span>
-</div>
-</a> </div> </div>
-<div class="row">
-<div class="col m-auto">
-<div class="pbl pbl_bottom text-center">
-<div class="OUTBRAIN" data-src="https://lectortmo.com/library?_page=1&amp;title=senko" data-widget-id="AR_1"></div>
-<script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
-<ins data-revive-zoneid="20" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col m-auto">
-<nav aria-label="front.search_result_pages">
-</nav>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div>
-<footer class="bg-light pt-5">
-<div class="container">
-<div class="row">
-<div class="col-sm-6 col-md-3">
-<h3 class="text-headline">Sitio</h3>
-<ul class="list-unstyled">
-<li><a href="https://lectortmo.com/about">Sobre TuMangaOnline</a></li>
-<li><a href="https://lectortmo.com/faq">Preguntas Frecuentes</a></li>
-<li><a href="https://lectortmo.com/guide">Manual de uso</a></li>
-<li><a href="https://lectortmo.com/collaborate">Colaborar</a></li>
-<li><a href="https://lectortmo.com/rules">Normas de la comunidad</a></li>
-<li><a href="https://lectortmo.com/terms">Términos de Uso</a></li>
-<li><a href="https://lectortmo.com/policy">Política de Privacidad</a></li>
-<li><a href="https://lectortmo.com/cookies">Cookies</a></li>
-<li><a href="https://lectortmo.com/contact">Contacto</a></li>
-<li><a href="#" class="change-consent" onclick="window.__tcfapi('displayConsentUi', 2, function() {} );">Privacy Settings</a></li>
-</ul>
-</div>
-<div class="col-sm-6 col-md-3">
-<h3 class="text-headline">Explorar</h3>
-<ul class="list-unstyled">
-<li><a href="https://lectortmo.com/library">Biblioteca</a></li>
-<li><a href="https://lectortmo.com/groups">Grupos</a></li>
-<li><a href="https://lectortmo.com/lists">Listas</a></li>
-</ul>
-</div>
-<div class="col-xs-12 col-md-6">
-<div class="col-xs-12 no-padding">
-<h3 class="text-headline">Contenidos</h3>
-<p>Tumangaonline no realiza las traducciones aquí realizadas y solo es un repositorio con visor propio para que distintos grupos de traducción puedan compartir sus propios proyectos de forma pública y organizada para el disfrute de todos.</p>
-<p> This site is protected by reCAPTCHA and the Google
-<a href="https://policies.google.com/privacy">Privacy Policy</a> and
-<a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
-</div>
-<div class="col-xs-12 no-padding">
-<h3 class="text-headline">Social</h3>
-<p>
-<a href="https://www.facebook.com/TuMangaOnline" target="_blank" class="btn btn-social btn-stroke btn-facebook"><i class="fab fa-fw fa-facebook-f"></i><span class="sr-only">Facebook</span></a>
-<a href="https://www.twitter.com/TuMangaOnline" target="_blank" class="btn btn-social btn-stroke btn-twitter"><i class="fab fa-fw fa-twitter"></i><span class="sr-only">Twitter</span></a>
-<a href="https://www.youtube.com/channel/UC1soJVJpmSX7bzo2MknzMrg" target="_blank" class="btn btn-social btn-stroke btn-youtube"><i class="fab fa-fw fa-youtube"></i><span class="sr-only">YouTube</span></a>
-<a href="https://www.vk.com/TuMangaOnline" target="_blank" class="btn btn-social btn-stroke btn-vkontakte"><i class="fab fa-fw fa-vk"></i><span class="sr-only">Vkontakte</span></a>
-</p>
-<p class="text-subhead">
-© 2014 - 2021 TuMangaOnline - F41
-</p>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<iframe src="https://nakamasweb.com/network.html" style="border: none;margin: 0;width: 100%;padding:0;"></iframe>
+    <div id="app" class="pb-5">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand animated fadeIn" href="https://lectortmo.com">
+                        TU<b>MANGA</b><i>ONLINE</i>
+                    </a>
+                    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="https://lectortmo.com/library">Biblioteca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://lectortmo.com/groups">Grupos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://lectortmo.com/lists">Listas</a>
+                            </li>
+                            <li class="nav-item" style="position: relative;">
+                                <a class="nav-link" href="https://lectortmo.com/forum" target="_blank"
+                                    style="position: relative;">Foro</a>
+                            </li>
+                        </ul>
+                        <form method="GET" action="https://lectortmo.com/library" accept-charset="UTF-8"
+                            class="form-inline my-2 my-md-0 px-0 px-md-3">
+                            <input name="_page" type="hidden" value="1">
+                            <input name="title" type="text" class="form-control" placeholder="Buscar...">
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-primary" href="https://lectortmo.com/uploads"><i
+                                        class="text-light fas fa-upload"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownTemplate"
+                                    data-toggle="dropdown" role="button" aria-expanded="false" title="Modo nocturno">
+                                    <i class="fas fa-eye fa-fw"></i><span id="toggleLightDarkIcon"><i
+                                            class="fas fa-toggle-off fa-fw"></i></span>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownTemplate">
+                                    <a class="dropdown-item" href="#" id="toggleLightDarkBtn" data-theme="light">Modo
+                                        nocturno</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguage"
+                                    data-toggle="dropdown" role="button" aria-expanded="false" title="Cambiar idioma">
+                                    <span class="flag-icon flag-icon-es"></span>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLanguage">
+                                    <a class="dropdown-item" href="https://lectortmo.com/lang/es"><span
+                                            class="flag-icon flag-icon-es"></span>&nbsp;Español</a>
+                                    <a class="dropdown-item" href="https://lectortmo.com/lang/en"><span
+                                            class="flag-icon flag-icon-gb"></span>&nbsp;English</a>
+                                    <a class="dropdown-item" href="https://lectortmo.com/lang/ct"><span
+                                            class="flag-icon flag-icon-ct"></span>&nbsp;Catalá</a>
+                                    <a class="dropdown-item" href="https://lectortmo.com/lang/pt"><span
+                                            class="flag-icon flag-icon-pt"></span>&nbsp;Português</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="https://lectortmo.com/login" class="nav-link">Acceder</a></li>
+                            <li class="nav-item"><a href="https://lectortmo.com/register" class="nav-link">Registrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main role="main" class="container-fluid">
+            <div class="row">
+                <div class="col m-auto">
+                    <div class="pbl pbl_top text-center col-12 col-md-8 offset-md-2">
+                        <ins data-revive-zoneid="24" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mt-2">
+                            <input id="title_item" class="form-control order-select form-control-lg"
+                                placeholder="Buscar..." name="title" type="text" value="senko">
+                        </div>
+                        <div class="col-8 col-md-2 mt-2">
+                            <select id="order_field_select"
+                                class="order-select form-control form-control-lg extendSelect"
+                                data-btn-class="btn-primary btn-block btn-lg">
+                                <option value="title" selected>Título</option>
+                                <option value="author">Autor</option>
+                                <option value="company">Compañia</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-1 mt-2">
+                            <button id="search_submit" class="btn btn-success btn-lg btn-block"><i
+                                    class="fas fa-search fa-fw"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <form method="GET" action="https://lectortmo.com/library" accept-charset="UTF-8" id="form-filters">
+                        <input id="order_item" name="order_item" type="hidden" value="likes_count">
+                        <input id="order_dir" name="order_dir" type="hidden" value="desc">
+                        <input id="title" name="title" type="hidden" value="senko">
+                        <input name="_page" type="hidden" value="1">
+                        <input id="filter_by" name="filter_by" type="hidden" value="title">
+                        <div class="pbl pbl_lateral_top text-center">
+                            <ins data-revive-zoneid="22" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
+                        </div>
+                        <div class="card mt-2">
+                            <div class="card-header" id="heading-books-filters">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#books-filters"
+                                    aria-expanded="false" aria-controls="books-filters">
+                                    <i class="indicator fas fa-chevron-right pull-right"></i>
+                                    <button class="btn btn-link" type="button">Filtros</button>
+                                </h3>
+                            </div>
+                            <div id="books-filters" class="collapse" aria-labelledby="heading-books-filters">
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="type" class="form-label">Tipo</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="type" id="type" class="form-control extendSelect"
+                                                onchange="checkStatus()" data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="manga">Manga</option>
+                                                <option value="manhua">Manhua</option>
+                                                <option value="manhwa">Manhwa</option>
+                                                <option value="novel">Novela</option>
+                                                <option value="one_shot">One shot</option>
+                                                <option value="doujinshi">Doujinshi</option>
+                                                <option value="oel">Oel</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <small>* Necesario para filtrar por estado</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="demography" class="form-label">Demograf&iacute;a</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="demography" id="demography" class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="seinen">Seinen</option>
+                                                <option value="shoujo">Shoujo</option>
+                                                <option value="shounen">Shounen</option>
+                                                <option value="josei">Josei</option>
+                                                <option value="kodomo">Kodomo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-row" id="status_filter" style="display: none;">
+                                        <div class="col">
+                                            <label for="status" class="form-label">Estado</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="status" id="status" class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="publishing">Publicándose</option>
+                                                <option value="ended">Finalizado</option>
+                                                <option value="cancelled">Cancelado</option>
+                                                <option value="on_hold">Pausado</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr id="status_filter_line" style="display: none;">
+                                    <div class="form-row" id="translation_status_filter" style="display: none;">
+                                        <div class="col">
+                                            <label for="status" class="form-label">Traducciones</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="translation_status" id="translation_status"
+                                                class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="active">Activo</option>
+                                                <option value="finished">Finalizado</option>
+                                                <option value="abandoned">Abandonado</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr id="translation_status_filter_line" style="display: none;">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="webcomic" class="form-label">Webcomic</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="webcomic" id="webcomic" class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="true">Si</option>
+                                                <option value="false">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="yonkoma" class="form-label">Yonkoma</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="yonkoma" id="yonkoma" class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="true">Si</option>
+                                                <option value="false">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="amateur" class="form-label">Amateur</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="amateur" id="amateur" class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="true">Si</option>
+                                                <option value="false">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="erotic" class="form-label">Er&oacute;tico</label>
+                                        </div>
+                                        <div class="col">
+                                            <select name="erotic" id="erotic" class="form-control extendSelect"
+                                                data-btn-class="btn-default btn-block">
+                                                <option value="">Ver todo</option>
+                                                <option value="true">Si</option>
+                                                <option value="false">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-2">
+                            <div class="card-header" id="heading-books-genders">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#books-genders"
+                                    aria-expanded="false" aria-controls="books-genders">
+                                    <i class="indicator fas fa-chevron-right pull-right"></i>
+                                    <button class="btn btn-link collapsed" type="button">Géneros</button>
+                                </h3>
+                            </div>
+                            <div id="books-genders" class="collapse" aria-labelledby="heading-books-genders">
+                                <div class="card-body">
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_1" value="1">
+                                            <label class="custom-control-label" for="gender_1">Acción</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_2" value="2">
+                                            <label class="custom-control-label" for="gender_2">Aventura</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_3" value="3">
+                                            <label class="custom-control-label" for="gender_3">Comedia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_4" value="4">
+                                            <label class="custom-control-label" for="gender_4">Drama</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_5" value="5">
+                                            <label class="custom-control-label" for="gender_5">Recuentos de la
+                                                vida</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_6" value="6">
+                                            <label class="custom-control-label" for="gender_6">Ecchi</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_7" value="7">
+                                            <label class="custom-control-label" for="gender_7">Fantasia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_8" value="8">
+                                            <label class="custom-control-label" for="gender_8">Magia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_9" value="9">
+                                            <label class="custom-control-label" for="gender_9">Sobrenatural</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_10" value="10">
+                                            <label class="custom-control-label" for="gender_10">Horror</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_11" value="11">
+                                            <label class="custom-control-label" for="gender_11">Misterio</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_12" value="12">
+                                            <label class="custom-control-label" for="gender_12">Psicológico</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_13" value="13">
+                                            <label class="custom-control-label" for="gender_13">Romance</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_14" value="14">
+                                            <label class="custom-control-label" for="gender_14">Ciencia Ficción</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_15" value="15">
+                                            <label class="custom-control-label" for="gender_15">Thriller</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_16" value="16">
+                                            <label class="custom-control-label" for="gender_16">Deporte</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_17" value="17">
+                                            <label class="custom-control-label" for="gender_17">Girls Love</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_18" value="18">
+                                            <label class="custom-control-label" for="gender_18">Boys Love</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_19" value="19">
+                                            <label class="custom-control-label" for="gender_19">Harem</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_20" value="20">
+                                            <label class="custom-control-label" for="gender_20">Mecha</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_21" value="21">
+                                            <label class="custom-control-label" for="gender_21">Supervivencia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_22" value="22">
+                                            <label class="custom-control-label" for="gender_22">Reencarnación</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_23" value="23">
+                                            <label class="custom-control-label" for="gender_23">Gore</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_24" value="24">
+                                            <label class="custom-control-label" for="gender_24">Apocalíptico</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_25" value="25">
+                                            <label class="custom-control-label" for="gender_25">Tragedia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_26" value="26">
+                                            <label class="custom-control-label" for="gender_26">Vida Escolar</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_27" value="27">
+                                            <label class="custom-control-label" for="gender_27">Historia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_28" value="28">
+                                            <label class="custom-control-label" for="gender_28">Militar</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_29" value="29">
+                                            <label class="custom-control-label" for="gender_29">Policiaco</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_30" value="30">
+                                            <label class="custom-control-label" for="gender_30">Crimen</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_31" value="31">
+                                            <label class="custom-control-label" for="gender_31">Superpoderes</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_32" value="32">
+                                            <label class="custom-control-label" for="gender_32">Vampiros</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_33" value="33">
+                                            <label class="custom-control-label" for="gender_33">Artes Marciales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_34" value="34">
+                                            <label class="custom-control-label" for="gender_34">Samurái</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_35" value="35">
+                                            <label class="custom-control-label" for="gender_35">Género Bender</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_36" value="36">
+                                            <label class="custom-control-label" for="gender_36">Realidad Virtual</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_37" value="37">
+                                            <label class="custom-control-label" for="gender_37">Ciberpunk</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_38" value="38">
+                                            <label class="custom-control-label" for="gender_38">Musica</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_39" value="39">
+                                            <label class="custom-control-label" for="gender_39">Parodia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_40" value="40">
+                                            <label class="custom-control-label" for="gender_40">Animación</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_41" value="41">
+                                            <label class="custom-control-label" for="gender_41">Demonios</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_42" value="42">
+                                            <label class="custom-control-label" for="gender_42">Familia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_43" value="43">
+                                            <label class="custom-control-label" for="gender_43">Extranjero</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_44" value="44">
+                                            <label class="custom-control-label" for="gender_44">Niños</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_45" value="45">
+                                            <label class="custom-control-label" for="gender_45">Realidad</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_46" value="46">
+                                            <label class="custom-control-label" for="gender_46">Telenovela</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_47" value="47">
+                                            <label class="custom-control-label" for="gender_47">Guerra</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="genders[]" id="gender_48" value="48">
+                                            <label class="custom-control-label" for="gender_48">Oeste</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-2">
+                            <div class="card-header" id="heading-books-exclude-genders">
+                                <h3 class="mb-0" data-toggle="collapse" data-target="#books-exclude-genders"
+                                    aria-expanded="false" aria-controls="books-exclude-genders">
+                                    <i class="indicator fas fa-chevron-right pull-right"></i>
+                                    <button class="btn btn-link collapsed" type="button">Excluir Géneros</button>
+                                </h3>
+                            </div>
+                            <div id="books-exclude-genders" class="collapse"
+                                aria-labelledby="heading-books-exclude-genders">
+                                <div class="card-body">
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_1" value="1">
+                                            <label class="custom-control-label" for="exclude_gender_1">Acción</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_2" value="2">
+                                            <label class="custom-control-label" for="exclude_gender_2">Aventura</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_3" value="3">
+                                            <label class="custom-control-label" for="exclude_gender_3">Comedia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_4" value="4">
+                                            <label class="custom-control-label" for="exclude_gender_4">Drama</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_5" value="5">
+                                            <label class="custom-control-label" for="exclude_gender_5">Recuentos de la
+                                                vida</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_6" value="6">
+                                            <label class="custom-control-label" for="exclude_gender_6">Ecchi</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_7" value="7">
+                                            <label class="custom-control-label" for="exclude_gender_7">Fantasia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_8" value="8">
+                                            <label class="custom-control-label" for="exclude_gender_8">Magia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_9" value="9">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_9">Sobrenatural</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_10" value="10">
+                                            <label class="custom-control-label" for="exclude_gender_10">Horror</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_11" value="11">
+                                            <label class="custom-control-label" for="exclude_gender_11">Misterio</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_12" value="12">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_12">Psicológico</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_13" value="13">
+                                            <label class="custom-control-label" for="exclude_gender_13">Romance</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_14" value="14">
+                                            <label class="custom-control-label" for="exclude_gender_14">Ciencia
+                                                Ficción</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_15" value="15">
+                                            <label class="custom-control-label" for="exclude_gender_15">Thriller</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_16" value="16">
+                                            <label class="custom-control-label" for="exclude_gender_16">Deporte</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_17" value="17">
+                                            <label class="custom-control-label" for="exclude_gender_17">Girls
+                                                Love</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_18" value="18">
+                                            <label class="custom-control-label" for="exclude_gender_18">Boys
+                                                Love</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_19" value="19">
+                                            <label class="custom-control-label" for="exclude_gender_19">Harem</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_20" value="20">
+                                            <label class="custom-control-label" for="exclude_gender_20">Mecha</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_21" value="21">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_21">Supervivencia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_22" value="22">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_22">Reencarnación</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_23" value="23">
+                                            <label class="custom-control-label" for="exclude_gender_23">Gore</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_24" value="24">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_24">Apocalíptico</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_25" value="25">
+                                            <label class="custom-control-label" for="exclude_gender_25">Tragedia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_26" value="26">
+                                            <label class="custom-control-label" for="exclude_gender_26">Vida
+                                                Escolar</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_27" value="27">
+                                            <label class="custom-control-label" for="exclude_gender_27">Historia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_28" value="28">
+                                            <label class="custom-control-label" for="exclude_gender_28">Militar</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_29" value="29">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_29">Policiaco</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_30" value="30">
+                                            <label class="custom-control-label" for="exclude_gender_30">Crimen</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_31" value="31">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_31">Superpoderes</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_32" value="32">
+                                            <label class="custom-control-label" for="exclude_gender_32">Vampiros</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_33" value="33">
+                                            <label class="custom-control-label" for="exclude_gender_33">Artes
+                                                Marciales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_34" value="34">
+                                            <label class="custom-control-label" for="exclude_gender_34">Samurái</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_35" value="35">
+                                            <label class="custom-control-label" for="exclude_gender_35">Género
+                                                Bender</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_36" value="36">
+                                            <label class="custom-control-label" for="exclude_gender_36">Realidad
+                                                Virtual</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_37" value="37">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_37">Ciberpunk</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_38" value="38">
+                                            <label class="custom-control-label" for="exclude_gender_38">Musica</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_39" value="39">
+                                            <label class="custom-control-label" for="exclude_gender_39">Parodia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_40" value="40">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_40">Animación</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_41" value="41">
+                                            <label class="custom-control-label" for="exclude_gender_41">Demonios</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_42" value="42">
+                                            <label class="custom-control-label" for="exclude_gender_42">Familia</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_43" value="43">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_43">Extranjero</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_44" value="44">
+                                            <label class="custom-control-label" for="exclude_gender_44">Niños</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_45" value="45">
+                                            <label class="custom-control-label" for="exclude_gender_45">Realidad</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_46" value="46">
+                                            <label class="custom-control-label"
+                                                for="exclude_gender_46">Telenovela</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_47" value="47">
+                                            <label class="custom-control-label" for="exclude_gender_47">Guerra</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input gender-checkbox"
+                                                name="exclude_genders[]" id="exclude_gender_48" value="48">
+                                            <label class="custom-control-label" for="exclude_gender_48">Oeste</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-lg mt-2" type="submit"><i
+                                class="fas fa-filter fa-fw"></i> Aplicar filtros</button>
+                    </form>
+                    <div class="pbl pbl_lateral_bottom text-center">
+                        <ins data-revive-zoneid="21" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-9">
+                    <div class="form-row mt-2">
+                        <div class="col-12 col-md-9 text-right"><span class="form-label">Ordenar por:</span></div>
+                        <div class="col-8 col-md-2">
+                            <select id="order_item_select" class="order-select form-control extendSelect"
+                                data-btn-class="btn-default btn-block">
+                                <option value="likes_count" selected>Me gusta</option>
+                                <option value="alphabetically">Alfabético</option>
+                                <option value="score">Puntuación</option>
+                                <option value="creation">Creación</option>
+                                <option value="release_date">Fecha estreno</option>
+                                <option value="num_chapters">Núm. Capítulos</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-1">
+                            <select id="order_dir_select" class="order-select form-control extendSelect"
+                                data-btn-class="btn-default btn-block">
+                                <option value="asc">ASC</option>
+                                <option value="desc" selected>DESC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="pbl pbl_middle text-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="12327">
+                            <a
+                                href=" https://lectortmo.com/library/manga/12327/henjo-hen-na-joshi-kousei-amaguri-chiko">
+                                <div class="thumbnail book book-thumbnail-12327">
+                                    <style>
+                                        .book-thumbnail-12327::before {
+                                            background-image: url('https://otakuteca.com/images/books/cover/12327_TMOmanga094125.jpg');
+                                        }
+                                    </style>
+                                    <div class="thumbnail-title">
+                                        <h4 class="text-truncate" title="Henjo: Hen na Joshikousei Amaguri Chiko">Henjo:
+                                            Hen na Joshikousei Amaguri Chiko</h4>
+                                    </div>
+                                    <span class="score"><i class="fas fa-star fa-fw"></i><span>8.00</span></span>
+                                    <span class="book-type badge badge-manga">MANGA</span>
+                                    <span class="demography seinen"
+                                        title="Seinen: dirigido a hombres jóvenes y adultos">Seinen</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="33118">
+                            <a href=" https://lectortmo.com/library/manga/33118/sewayaki-kitsune-no-senko-san">
+                                <div class="thumbnail book book-thumbnail-33118">
+                                    <style>
+                                        .book-thumbnail-33118::before {
+                                            background-image: url('https://otakuteca.com/images/books/cover/33118_TMOManga5a19ce3a4b0b4.jpg');
+                                        }
+                                    </style>
+                                    <div class="thumbnail-title">
+                                        <h4 class="text-truncate" title="Sewayaki Kitsune no Senko-san">Sewayaki Kitsune
+                                            no Senko-san</h4>
+                                    </div>
+                                    <span class="score"><i class="fas fa-star fa-fw"></i><span>8.00</span></span>
+                                    <span class="book-type badge badge-manga">MANGA</span>
+                                    <span class="demography seinen"
+                                        title="Seinen: dirigido a hombres jóvenes y adultos">Seinen</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="21336">
+                            <a href=" https://lectortmo.com/library/manga/21336/Yoake-e-No-Senkou">
+                                <div class="thumbnail book book-thumbnail-21336">
+                                    <style>
+                                        .book-thumbnail-21336::before {
+                                            background-image: url('https://otakuteca.com/images/books/cover/21336_TMOManga583cced6aa8bd.jpg');
+                                        }
+                                    </style>
+                                    <div class="thumbnail-title">
+                                        <h4 class="text-truncate" title="Yoake e No Senkou">Yoake e No Senkou</h4>
+                                    </div>
+                                    <span class="score"><i class="fas fa-star fa-fw"></i><span>8.42</span></span>
+                                    <span class="book-type badge badge-manga">MANGA</span>
+                                    <span class="demography shoujo"
+                                        title="Shoujo: dirigido a chicas adolescentes">Shoujo</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="23017">
+                            <a href=" https://lectortmo.com/library/manga/23017/Senkou-Paradox">
+                                <div class="thumbnail book book-thumbnail-23017">
+                                    <style>
+                                        .book-thumbnail-23017::before {
+                                            background-image: url('https://otakuteca.com/images/books/cover/23017_TMOManga5897b63318953.jpg');
+                                        }
+                                    </style>
+                                    <div class="thumbnail-title">
+                                        <h4 class="text-truncate" title="Senkou Paradox">Senkou Paradox</h4>
+                                    </div>
+                                    <span class="score"><i class="fas fa-star fa-fw"></i><span>8.58</span></span>
+                                    <span class="book-type badge badge-manga">MANGA</span>
+                                    <span class="demography shoujo"
+                                        title="Shoujo: dirigido a chicas adolescentes">Shoujo</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-auto">
+                            <div class="pbl pbl_bottom text-center">
+                                <div class="OUTBRAIN" data-src="https://lectortmo.com/library?_page=1&amp;title=senko"
+                                    data-widget-id="AR_1"></div>
+                                <script type="text/javascript" async="async"
+                                    src="//widgets.outbrain.com/outbrain.js"></script>
+                                <ins data-revive-zoneid="20" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-auto">
+                            <nav aria-label="front.search_result_pages">
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h3 class="text-headline">Sitio</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://lectortmo.com/about">Sobre TuMangaOnline</a></li>
+                        <li><a href="https://lectortmo.com/faq">Preguntas Frecuentes</a></li>
+                        <li><a href="https://lectortmo.com/guide">Manual de uso</a></li>
+                        <li><a href="https://lectortmo.com/collaborate">Colaborar</a></li>
+                        <li><a href="https://lectortmo.com/rules">Normas de la comunidad</a></li>
+                        <li><a href="https://lectortmo.com/terms">Términos de Uso</a></li>
+                        <li><a href="https://lectortmo.com/policy">Política de Privacidad</a></li>
+                        <li><a href="https://lectortmo.com/cookies">Cookies</a></li>
+                        <li><a href="https://lectortmo.com/contact">Contacto</a></li>
+                        <li><a href="#" class="change-consent"
+                                onclick="window.__tcfapi('displayConsentUi', 2, function() {} );">Privacy Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3 class="text-headline">Explorar</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://lectortmo.com/library">Biblioteca</a></li>
+                        <li><a href="https://lectortmo.com/groups">Grupos</a></li>
+                        <li><a href="https://lectortmo.com/lists">Listas</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 no-padding">
+                        <h3 class="text-headline">Contenidos</h3>
+                        <p>Tumangaonline no realiza las traducciones aquí realizadas y solo es un repositorio con visor
+                            propio para que distintos grupos de traducción puedan compartir sus propios proyectos de
+                            forma pública y organizada para el disfrute de todos.</p>
+                        <p> This site is protected by reCAPTCHA and the Google
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 no-padding">
+                        <h3 class="text-headline">Social</h3>
+                        <p>
+                            <a href="https://www.facebook.com/TuMangaOnline" target="_blank"
+                                class="btn btn-social btn-stroke btn-facebook"><i
+                                    class="fab fa-fw fa-facebook-f"></i><span class="sr-only">Facebook</span></a>
+                            <a href="https://www.twitter.com/TuMangaOnline" target="_blank"
+                                class="btn btn-social btn-stroke btn-twitter"><i class="fab fa-fw fa-twitter"></i><span
+                                    class="sr-only">Twitter</span></a>
+                            <a href="https://www.youtube.com/channel/UC1soJVJpmSX7bzo2MknzMrg" target="_blank"
+                                class="btn btn-social btn-stroke btn-youtube"><i class="fab fa-fw fa-youtube"></i><span
+                                    class="sr-only">YouTube</span></a>
+                            <a href="https://www.vk.com/TuMangaOnline" target="_blank"
+                                class="btn btn-social btn-stroke btn-vkontakte"><i class="fab fa-fw fa-vk"></i><span
+                                    class="sr-only">Vkontakte</span></a>
+                        </p>
+                        <p class="text-subhead">
+                            © 2014 - 2021 TuMangaOnline - F41
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <iframe src="https://nakamasweb.com/network.html" style="border: none;margin: 0;width: 100%;padding:0;"></iframe>
 
-<script type="text/javascript" src="/js/app.js?id=1e6e0cc28845d2d47776?v=1.0.30"></script>
-<style>
-            .grecaptcha-badge {
-                visibility: hidden;
-            }
-        </style>
-<script>
+    <script type="text/javascript" src="/js/app.js?id=1e6e0cc28845d2d47776?v=1.0.30"></script>
+    <style>
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+    </style>
+    <script>
         if (!document.getElementById('gReCaptchaScript')) {
             let reCaptchaScript = document.createElement('script');
             reCaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js?render=6Le223cUAAAAAH6ZdiltvWrWiEUSfx5BwRfrQGU-&hl=es');
@@ -1234,50 +1420,50 @@ TU<b>MANGA</b><i>ONLINE</i>
             document.head.appendChild(reCaptchaScript);
         }
     </script>
-<script>
-    function refreshReCaptchaV3(fieldId,action){
-        return new Promise(function (resolve, reject) {
-            grecaptcha.ready(function () {
-                grecaptcha.execute(window['client'+fieldId], {
-                    action: action
-                }).then(resolve);
+    <script>
+        function refreshReCaptchaV3(fieldId, action) {
+            return new Promise(function (resolve, reject) {
+                grecaptcha.ready(function () {
+                    grecaptcha.execute(window['client' + fieldId], {
+                        action: action
+                    }).then(resolve);
+                });
             });
-        });
-    }
+        }
 
-    function getReCaptchaV3Response(fieldId){
-        return grecaptcha.getResponse(window['client'+fieldId])
-    }
-</script>
-<!--[if lte IE 8]>
+        function getReCaptchaV3Response(fieldId) {
+            return grecaptcha.getResponse(window['client' + fieldId])
+        }
+    </script>
+    <!--[if lte IE 8]>
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap-ie8.js"></script>
 <![endif]-->
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '214430138908782',
-            cookie: true,
-            xfbml: true,
-            version: 'v3.0'
-        });
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '214430138908782',
+                cookie: true,
+                xfbml: true,
+                version: 'v3.0'
+            });
 
-        FB.AppEvents.logPageView();
+            FB.AppEvents.logPageView();
 
-    };
+        };
 
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-<script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
         $('.order-select ').on('change', function () {
             $('#order_item').val($('#order_item_select').val());
             $('#order_dir').val($('#order_dir_select').val());
@@ -1331,16 +1517,19 @@ TU<b>MANGA</b><i>ONLINE</i>
             }
         });
     </script>
-<script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $('.gauge-arrow').cmGauge();
-        $('.extendSelect').extendSelect();
-            });
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-</script>
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6255cd42bf447f70',m:'eb9f61f1c08d439be86d8f8ee9b7c74bfc8fc7f8-1613966444-1800-AesKNTqApHXhXsrRajhbQaYhbYSK7iqqU9Ranc/PeRJF8VwycaEBUZ9kL9oKAhMdqSxHYRuz8L9PuXdL/vB1EtHuGjfXL4/B0njgn3TSKpFJR+P3N9GSDkJFQv0xpC7ws7VFUa1pj+yKCkvVlI5gBrk=',s:[0x3cc087d987,0x20654a24da],}})();</script></body>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.gauge-arrow').cmGauge();
+            $('.extendSelect').extendSelect();
+        });
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
+    <script
+        type="text/javascript">(function () { window['__CF$cv$params'] = { r: '6255cd42bf447f70', m: 'eb9f61f1c08d439be86d8f8ee9b7c74bfc8fc7f8-1613966444-1800-AesKNTqApHXhXsrRajhbQaYhbYSK7iqqU9Ranc/PeRJF8VwycaEBUZ9kL9oKAhMdqSxHYRuz8L9PuXdL/vB1EtHuGjfXL4/B0njgn3TSKpFJR+P3N9GSDkJFQv0xpC7ws7VFUa1pj+yKCkvVlI5gBrk=', s: [0x3cc087d987, 0x20654a24da], } })();</script>
+</body>
+
 </html>

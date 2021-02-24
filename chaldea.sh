@@ -46,7 +46,7 @@ show_menu
 while [ -n "$opt" ]; do
     case $opt in
     1)
-        source ./tools/test.sh
+        source ./container/tmoManga.sh
         show_menu
         ;;
     x)
