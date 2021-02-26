@@ -4,7 +4,7 @@ RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
-
+mkdir -pv "pana"
 begin=$(date +"%s")
 
 echo -e "${WHITE}Ingrese manga a buscar:${GREEN}"
@@ -18,13 +18,14 @@ content=$(wget -q -O - "https://lectortmo.com/library?_page=1&title=${name/ /+}"
 
 echo -e "Buscando Títulos ...\n"
 
-echo $content | grep -oP "(?<=<h4 class=\"text-truncate\" title=\").*?(?=\">)" >names.txt
+echo $content | grep -oP "(?<=<h4 class=\"text-truncate\" title=\").*?(?=\">)" >files/names.txt
+echo $content | grep -oP "https://lectortmo.com/library/.*?(?=\">)" >files/links_menu.txt
 
 array=()
 while read -r line; do
     # Reading each line
     array+=("$line")
-done <names.txt
+done <files/names.txt
 
 menus_titles() {
 
@@ -47,6 +48,6 @@ menus_titles() {
 }
 
 menus_titles
-while [ -n "$opt" ]; do
 
-done
+#while [ -n "$opt" ]; do
+#done
